@@ -2,6 +2,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const Pusher = require('pusher');
+const cors = require('cors');
 const { connection_url } = require('./config');
 const { Messages } = require('./dbMessages');
 
@@ -19,6 +20,7 @@ const pusher = new Pusher({
 
 // middleware
 app.use(express.json());
+app.use(cors());
 
 // DB config
 
@@ -43,6 +45,8 @@ db.once('open', () => {
       pusher.trigger('messages', 'inserted', {
         name: messageDetails.name,
         message: messageDetails.message,
+        timestamp: messageDetails.timestamp,
+        received: messageDetails.received,
       });
     } else {
       console.log('Error triggering Pusher');

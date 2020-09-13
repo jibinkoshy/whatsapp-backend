@@ -5,6 +5,7 @@ ExpressJS
 MongoDB
 Mongoose
 Pusher
+Cors
 
 New Message API
 
