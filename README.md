@@ -1,12 +1,12 @@
 Tech stack
 
-NodeJS
-ExpressJS
-MongoDB
-Mongoose
-Pusher
+**- NodeJS**
+**- ExpressJS**
+**- MongoDB**
+**- Mongoose**
+**- Pusher**
 
-New Message API
+**New Message API**
 
 ![image](https://user-images.githubusercontent.com/20209497/93025528-4c41d780-f5c4-11ea-9e25-3c8fa2f870cf.png)
 
